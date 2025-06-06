@@ -1,9 +1,26 @@
-*{
-  list-style: none;
+
+.mon_texte {  /* appel de class*/
+  color: violet;
+  font-size: 48px;
+  font-family: Vardana, Geneva, Tahoma, sans-serif;
+}
+
+#presentation{  /* appel d'ID*/
+  background-color: blue;
+  height: 300px;
+  width: 100%;
 }
 
 ul{
   display:flex;
   justify-content: space-around;
   align-items: center;
+}
+
+h1{
+  color: blue;
+}
+
+/*p{
+  color: red;
 }
