@@ -1,6 +1,6 @@
 *{                            /*   * = réinitialise les paramètres du navigateur*/
     list-style: none;
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 
@@ -9,16 +9,39 @@ header{
   display: flex;
 }
 
-nav{
-  width: 70%;
+.nav{
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .image{
-  width: 30%;
+  width: 20%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.image img{
+  width: 100%
 }
 
-#diplome{
+#diplomes{
   width: 100%;
-  height: 300px;
+  height: 100px;
   border: 2px solid red;
+}
+
+#skills{
+  background-color: blue;
+  height: 25%;
+  Width: 100%;
+}
+
+.fa-brands{  /* Icons de la bibliothèque Font Awesome (Facebook)*/
+  color: #983b81;
+  font-size: 50px;
 }
