@@ -1,0 +1,179 @@
+/* Exercice 1*/
+/* 1. Sélectionner uniquement les paragraphes avec la class "texte" */
+p.texte{
+  color: blue;
+}
+
+/* 2. Sélectionner tout les éléments avec la class "texte" */
+.texte{
+  font-weight: bold;
+}
+
+/* 3. Sélectionner le titre principal */
+#titre-principal{
+  font-size: 24px;
+}
+
+/* Exercice 2*/
+/* Créer une ligne de boxes centrée horizontalement */
+.flex-container{
+  display: flex;                   /* Utiliser Flexbox pour centrer les éléments */
+  justify-content: center;         /* Centrer horizontalement */
+  gap: 10px;                       /* Ajouter un espace entre les boxes */
+} 
+.box{
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  display: flex;                   /* Utiliser Flexbox pour centrer le contenu */
+  justify-content: center;
+  align-items: center;             /* Centrer le contenu verticalement */
+  color: white;
+}
+
+/* Exercice 3 */
+/* Créer une grille responsive de 2*2 qui devient 1*4 sur mobile */
+.grid-container{
+  display: grid;                          /* Utiliser Grid pour la mise en page */
+  grid-template-columns: repeat(2, 1fr);  /* 2 colonnes de taille égale */
+  gap: 10px;                              /* Espace entre les éléments */
+}
+.grid-item{
+  background-color: #2ecc71;            /* Couleur de fond des éléments */
+  padding: 20px;                          /* Espacement interne */
+  text-align: center;                     /* Centrer le texte */
+  color: white;                         /* Couleur du texte */
+}
+/* Responsive: une seule colonne sur mobile */
+@media (max-width: 768px) {               /* Lorsque la largeur de l'écran est inférieure ou égale à 768px */
+  .grid-container {
+    grid-template-columns: 1fr;           /* Une seule colonne */
+  }
+}
+
+/* Exercice 4 */
+/* Créer une carte avec des marges et du padding */
+.card {
+  width: 200px;                                /* Largeur de la carte */
+  padding: 20px;                               /* Espacement interne */
+  margin: 20px auto;                           /* Marges automatiques pour centrer horizontalement */
+  border: 1px solid #ddd;                    /* Bordure fine grise */
+  border-radius: 8px;                          /* Coins arrondis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+}
+
+/* Exercice 5 */
+/* Créer un bouton avec effet de survol animé */
+.btn-anime {
+  padding: 10px 20px;             /* Espacement interne du bouton */
+  background-color: #3498bd;    /* Couleur de fond du bouton */
+  color: white;                 /* Couleur du texte */
+  border: none;                   /* Pas de bordure */
+  border-radius: 4px;             /* Coins arrondis */
+  transition: all 0.3s ease;      /* Transition pour l'animation */
+}
+.btn-anime:hover {                /* Effet de survol */
+  transform: scale(1.1);          /* Agrandir légèrement le bouton */
+  background-color: #b93a29;    /* Changer la couleur de fond */
+}
+
+/* Exercice 6*/
+/* Créer un thème cohérent avec des variables CSS */
+:root{
+  --couleur-primaire: #34cb45;  /* Couleur primaire */
+  --couleur-texte: #333;        /* Couleur du texte */
+  --espacement: 16px;             /* Espacement standard */
+}
+.theme-container {
+  color: var(--couleur-texte);    /* Utiliser la variable pour la couleur du texte */
+  padding: var(--espacement);     /* Utiliser la variable pour le padding */
+}
+.theme-container h2 {
+  color: var(--couleur-primaire);       /* Utiliser la variable pour la couleur du titre */
+  padding: calc(var(--espacement) / 2); /* Utiliser la variable divisée par 2 pour le padding du titre */
+}
+.theme-container button {
+  background-color: var(--couleur-primaire); /* Utiliser la variable pour la couleur du bouton */
+  color: white;                            /* Couleur du texte du bouton */
+  padding: calc(var(--espacement) / 2);      /* Utiliser la variable divisée par 2 pour le padding */
+  border: none;                              /* Pas de bordure */
+  border-radius: 4px;                        /* Coins arrondis */
+}
+
+/* Exercice 7 */
+/* Créer une navigation qui s'adapte aux mobile */
+.nav-responsive{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: pink;
+}
+/* Sur mobile: menu vertical */
+@media (max-width: 600px) {                /* Lorsque la largeur de l'écran est inférieure ou égale à 600px */
+  .nav-responsive {
+    flex-direction: column;                 /* Passer en colonne */
+    align-items: center;                    /* Centrer les éléments */
+  }
+}
+
+/* Exercice 8 */
+/* Créer une carte qui se retourne au survol */
+.card-flip {  
+  width: 200px;
+  height: 300px;  
+  position: relative;
+  perspective: 1000px;
+  border: 1px solid #ddd;  /* Bordure fine grise */
+}
+.card-front, .card-back {
+  position: absolute;             /* Positionner les faces de la carte */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;    /* Cacher la face arrière lors de la rotation */
+  transition: transform 0.6s;     /* Animation de la rotation */
+  display: flex;                  /* Utiliser Flexbox pour centrer le contenu */
+  align-items: center;            /* Centrer verticalement */
+  justify-content: center;        /* Centrer horizontalement */
+  background-color: blue;
+  color: white;
+}
+.card-back{
+  background-color: green;
+  transform: rotateY(180deg);  /* Retourner la carte */
+}
+.card-flip:hover .card-front {
+  transform: rotateY(180deg);  /* Retourner la carte avant */
+}
+.card-flip:hover .card-back {
+  transform: rotateY(360deg);  /* Retourner la carte arrière */
+}
+
+/* Exercice 9 */
+/* Céer un modal avec un fond flouté */
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;                                     /* Assurer que le modal est au-dessus du fond */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     /* Ombre légère */
+}
+.modal-backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);         /* Fond semi-transparent */
+  backdrop-filter: blur(5px);                     /* Flouter le fond */
+  z-index: 1;                                     /* Assurer que le fond est derrière le modal */
+}

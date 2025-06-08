@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours CSS</title>
+</head>
+<body>
+  # CSS 3 Cheatsheet
+
+  ## Sélecteurs
+
+  ### Théorie
+    css
+.classe        /* Sélecteur par classe */
+#id            /* Sélecteur par ID */
+element        /* Sélecteur par élément */
+element.classe /* Sélecteur combiné (élément avec une clsse spécifique)*/
+element#id     /* Sélecteur combiné avec ID (element avec un id spécifique)*/
+*              /* Sélecteur universel (tous les éléments) */
+________________________________________________________________________________________________________
+## Flexbox
+
+### Théorie
+display: flex; 
+/* Permet de transformer un conteneur en conteneur flex */
+
+flex-direction: row | colomn | row-reverse | colomn-reverse; 
+/* Permet de définir la direction principale des éléments flexibles */
+
+justify-content: flex-start | flex-end | center | space-between | space-around; 
+/* Permet de gérer l'alignement des éléments le long de l'axe principal */
+
+align-items; flex-start | flex-end | center | baseline | stretch; 
+/* Permet de gérer l'alignement des éléments le long de l'axe transversal */
+
+flex-wrap: nowrap | wrap | wrap-reverse; 
+/* Permet de gérer le comportement des éléments flexibles lorsqu'ils débordent de leur conteneur */
+
+flex: 1 | 2 | ...; 
+/* grow | shrink | basis; Permet de définir la flexibilité des éléments */
+
+________________________________________________________________________________________________________
+## Grid
+
+### Théorie
+    CSS
+display: grid;  
+/* Permet de transformer un conteneur en conteneur de grille */
+
+grid-template-columns: repeat(3, 1fr) | 100px 200px auto;  
+/* Permet de définir la structure de la grille en spécifiant le nombre de colonnes et leur taille */
+
+grid-template-rows: repeat(2, 1fr) | 100px 200px auto;  
+/* Permet de définir la structure de la grille en spécifiant le nombre de colonnes et de lignes */
+
+grid-gap: 20px;  
+/* Permet de définir l'espacement entre les lignes et les colonnes */
+
+________________________________________________________________________________________________________
+## Box Model
+
+### Théorie
+    CSS
+margin : 10px;            /* Permet de définir l'espace extérieur d'un élément */
+padding: 10px;            /* Permet de définir l'espace intérieur d'un élément */
+boder: 1px solid black;   /* Permet de définir la bordure d'un élément */
+
+________________________________________________________________________________________________________
+## Animation
+
+### Théorie
+    CSS
+@keyframes mon animation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+________________________________________________________________________________________________________
+## Variables CSS
+
+### Théorie
+    CSS
+:root {
+  --couleur-principale: #007bff;
+}
+
+________________________________________________________________________________________________________
+## Media Queries
+    CSS
+@media screen and (max-width: 768px) {
+  /* Styles mobile */
+}
+
+________________________________________________________________________________________________________
+## Transformations
+
+### Théorie
+    CSS
+transform: rotate(45deg);
+transform:cscale(1.5);
+
+
+________________________________________________________________________________________________________
+## Effets
+
+### Théorie
+    CSS
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+filter: blur(5px);
+
+
+
+</body>
+</html>
