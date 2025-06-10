@@ -1,18 +1,48 @@
-*{                            /*   * = réinitialise les paramètres du navigateur*/
-    list-style: none;
+*{  
     margin: 0;
-    padding: 0;
+    padding: 0;                          /*   * = réinitialise les paramètres du navigateur*/
+    list-style: none;
+    text-decoration: none;
 }
 
+body{
+  margin: 1%;
+}
 header{
-  width: 100%;
-  display: flex;
+  width: 100%;                                              /* 100% de la largeur de la fenêtre */
+  height: 100vh;                                            /* 100vh = 100% de la hauteur de la fenêtre */
+  display: flex;                                            /* Flexbox pour aligner les éléments */
+  background-image: url(../images/web-g6b740a347_1920.jpg); /* Image d'arrière-plan */
+  background-size: cover;                                   /* Pour couvrir tout l'espace */
 }
 
-.nav{
+h3{
+  text-align: center;
+  font-family: 18px;
+  color: blue;
+}
+#about_me{
+  text-align: center;
+  font-family: 18px;
+}
+
+.titre{
+  display: flex;                                            /* Flexbox pour aligner les éléments */
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  margin: auto;
+}
+
+nav{
   width: 100%;
-  background-color: transparent;
-  position: fixed;
+  background-color: #fff;
+  position: fixed;                                          /* Pour que le menu reste en haut de la page */
 }
 
 .menu{
@@ -20,13 +50,21 @@ header{
   justify-content: space-evenly;
   align-items: center;
 }
+.menu li a {
+  color: #5807daaf;
+  font-size: 1.5rem;
+}
+.menu li a:hover {
+  color: darkorange;
+}
 
 .image{
-  width: 20%;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 100%;
+
 }
 .image img{
-  width: 100%
+  margin: auto;
+  width: 20%;
 }
 
 #diplomes{
@@ -35,13 +73,91 @@ header{
   border: 2px solid red;
 }
 
+
+
+#experiences{
+  display: flex;
+  flex-wrap: wrap;
+}
+.section_title{
+  width: 100%;
+}
+.emploi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 5%;
+}
 #skills{
-  background-color: blue;
+  background-color: #fff;
   height: 25%;
-  Width: 100%;
+  Width: auto;                          /* Largeur automatique pour s'adapter au contenu */
+  border: solid 2px red;
+  
+}
+.langages{
+  color: #5807daaf;
+  display: flex;
+  flex-wrap: wrap;                     /* Pour que les éléments s'adaptent à la largeur */
+  width: 85%;
+  margin: auto;                       /* Centrer le contenu */
+  padding: 1%;                        /* Espace entre les éléments */     
+  justify-content: space-evenly;
+}
+figure{
+  background-color: rgb(148, 187, 219);
+  width: 24%;
+  margin: 1px;
+  /*margin: auto 2%;*/
+  
+}
+footer{
+  background-color: rgb(23, 23, 252);
 }
 
-.fa-brands{  /* Icons de la bibliothèque Font Awesome (Facebook)*/
-  color: #983b81;
-  font-size: 50px;
+/* balise pour modifier les incons du footer */
+.fa-brands, .fa-solid{ 
+  color:white; /* Icons de la bibliothèque Font Awesome (Facebook)*/
+}
+
+
+
+/* Pour le reponsive */
+@media screen and (max-width: 768px){  /* Media query pour les écrans de moins de 768px 
+                                        ( en js, c'est là qu'intervient le menu hamberger )*/
+  header{
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center;    /* Centrer les éléments */
+  }
+  /*.image{
+    width: 100%;           /* Image prend toute la largeur */
+  /*}
+  /*.image img{
+    width: 100%;           /* Image prend toute la largeur */
+  /*}*/
+  .menu{
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center;    /* Centrer les éléments */
+  }
+  #experiences{
+    flex-direction: column;
+  }
+  .emploi{
+    width: 100%;
+  }
+  .langages{
+    flex-direction: column;
+
+  }
+  figure{
+    width: 100%;
+    align-items: center;
+    background-color: yellow;
+    
+  }
+  h6, p{
+    text-align: center;
+  }
 }

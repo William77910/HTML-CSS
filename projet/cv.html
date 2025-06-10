@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Assets/css/cv.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> 
 
     <!--Récupération du kit pour l'icon Facebook-->
     <script
@@ -12,12 +15,10 @@
 
     <title>Mon CV</title>
   </head>
-  <body>
-    <header>
-      <div class="image">
-        <img src="../Assets/images/01 09 08  1.JPG" alt="moi" />
-      </div>
 
+  <body>
+
+    <header>
       <nav>
         <ul class="menu">
           <li><a href="">Home</a></li>
@@ -27,31 +28,31 @@
           <li><a href="">Expériences</a></li>
         </ul>
       </nav>
+      <div class="titre"></div>
     </header>
 
+    <h1>Moi</h1>
     <main>
       <section id="about_me">
-        <h2>Moi</h2>
-        <div>
+        <div class="info">
+          <h3>A propos de moi</h3>
           <p>
             En formation Développeur Web et Web mobile depuis Mars 2025 , mes langages sont JAVA,  HTML5, CSS3,
             Javascript
           </p>
           <div class="image">
-            <img src="../Assets/images/web-g6b740a347_1920.jpg" alt="" />
+            <img src="../Assets/images/01 09 08  1.JPG" alt="photo de moi"/>
           </div>
-          <div></div>
         </div>
       </section>
-      <section id="skills">
+      <section>
         <h2>JAVA</h2>
         <h2>JAVA</h2>
         <h2>JAVA</h2>
         <h2>JAVA</h2>
       </section>
-
       <section id="diplomes">
-      <dt>                                <!--une façon de faire une liste-->
+      <dt>                                <!--une façon de faire une liste avec dt-->
         <dd>Diplome1</dd>  
         <dd>Date d'eobtention1</dd>
       </dt>
@@ -60,39 +61,128 @@
         <dd>Date d'eobtention2</dd>
       </dt>
       </section>
-      <section id="experience">
-      <div>                               <!-- une autre façon de présenter une liste-->
-        <h5>Expérience1</h5>
-        <p><strong>Période 1</strong></p>
-      </div>
-      <div>
-        <h5>Expérience2</h5>
-        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo mollitia, 
+      <section id="experiences">
+        <div class="section_title">
+          <h3>Expériences</h3>
+        </div>
+        <div class="emploi">                               <!-- une autre façon de présenter une liste avec une div-->
+          <h5>Nom de l'espérience</h5>
+          <h6>Date de l'expérience</h6>
+          <p>Commentaire sur l'xp (Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo mollitia, 
           doloribus architecto cupiditate labore quae quasi! Provident consectetur quis odit similique incidunt! 
-          Error ipsa eum quis quidem tempore quos.</strong></p>
-      </div>
-      <div>
-        <ol>
-          <li>teste</li>
-          <li>teste</li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
-      <div>
-        <ul>
-          <li>teste</li>
-          <li>teste</li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
+          Error ipsa eum quis quidem tempore quos.)</p>
+        </div>
+        <div class="emploi">          
+          <h5>Nom de l'espérience</h5>
+          <h6>Date de l'expérience</h6>
+          <p>Commentaire sur l'xp (Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo mollitia, 
+          doloribus architecto cupiditate labore quae quasi! Provident consectetur quis odit similique incidunt! 
+          Error ipsa eum quis quidem tempore quos.)</p>
+        </div>
+        <div class="emploi">                               
+          <h5>Nom de l'espérience</h5>
+          <h6>Date de l'expérience</h6>
+          <p>Commentaire sur l'xp (Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo mollitia, 
+          doloribus architecto cupiditate labore quae quasi! Provident consectetur quis odit similique incidunt! 
+          Error ipsa eum quis quidem tempore quos.)</p>
+        </div>
+        <div class="emploi">                               
+          <h5>Nom de l'espérience</h5>
+          <h6>Date de l'expérience</h6>
+          <p>Commentaire sur l'xp (Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo mollitia, 
+          doloribus architecto cupiditate labore quae quasi! Provident consectetur quis odit similique incidunt! 
+          Error ipsa eum quis quidem tempore quos.)</p>
+        </div>
+        <div>
+          <ol>                              <!-- une lite ordonnée numérotée-->
+            <li>teste</li>
+            <li>teste</li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
+        <div>
+          <ul>                              <!-- une liste non ordonnée avec des points-->
+            <li>teste</li>
+            <li>teste</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section id="skills">
+
+        <div class="section_title">
+          <h3>Skills</h3>
+        </div>
+
+        <div class="langages">
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>JAVA</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>HTML5</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>CSS3</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>Javascript</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>React</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>Bootstrap</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>SASS</h6>
+            <p>Java est un langage natif objet</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="">
+          <figcaption>
+            <h6>PHP</h6>
+            <p>PHP est un langage script</p>
+          </figcaption>
+        </figure>
+        </div>
+      </section>
+      
     </main>
 
     <footer>
-      <i class="fa-brands fa-facebook"></i>                 <!--Récupération de l'icon Facebook-->
-      <p>&#169; MOI</p>                                     <!--("&#169" ou "&copy" = incon copyright)sert à protéger son code-->
+      <i class="fa-brands fa-linkedin"><a href=""></a></i>       <!--Récupération de l'icon Linkedin-->
+      <i class="fa-brands fa-github"><a href=""></a></i>           <!--Récupération de l'icon GitHub-->
+      <i class="fa-solid fa-globe"><a href=""></a></i>          <!--Récupération de l'icon Portfolio-->  
+      <p>&#169; MOI</p>                                   <!--("&#169" ou "&copy" = incon copyright)sert à protéger son code-->
       <a href="mentions-legales.html">Mentions légales</a>
     </footer>
   </body>
