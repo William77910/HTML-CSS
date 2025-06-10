@@ -21,6 +21,9 @@ h3{
   font-family: 18px;
   color: blue;
 }
+section{
+  margin-top: 5%;
+}
 #about_me{
   text-align: center;
   font-family: 18px;
@@ -41,7 +44,7 @@ h1{
 
 nav{
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   position: fixed;                                          /* Pour que le menu reste en haut de la page */
 }
 
@@ -51,8 +54,8 @@ nav{
   align-items: center;
 }
 .menu li a {
-  color: #5807daaf;
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
 }
 .menu li a:hover {
   color: darkorange;
@@ -73,8 +76,6 @@ nav{
   border: 2px solid red;
 }
 
-
-
 #experiences{
   display: flex;
   flex-wrap: wrap;
@@ -82,45 +83,61 @@ nav{
 .section_title{
   width: 100%;
 }
-.emploi{
+.emploi1, .emploi3{
+  border-right: 1px solid blue;
+}
+.emploi1, .emploi2, .emploi3, .emploi4{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 49%;
   margin-top: 5%;
 }
 #skills{
-  background-color: #fff;
-  height: 25%;
-  Width: auto;                          /* Largeur automatique pour s'adapter au contenu */
-  border: solid 2px red;
-  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f8fc;
+  height: auto;
+  Width: 100%;                          /* Largeur automatique pour s'adapter au contenu */
 }
 .langages{
-  color: #5807daaf;
+  background-color: #5807daaf;
   display: flex;
   flex-wrap: wrap;                     /* Pour que les éléments s'adaptent à la largeur */
-  width: 85%;
-  margin: auto;                       /* Centrer le contenu */
-  padding: 1%;                        /* Espace entre les éléments */     
-  justify-content: space-evenly;
+  width: 100%;                      
 }
 figure{
-  background-color: rgb(148, 187, 219);
-  width: 24%;
-  margin: 1px;
-  /*margin: auto 2%;*/
-  
+  background-color: #fff;
+  border: solid 1px red;
+  width: 300px;
+  height: 200px;
+  margin: 1% 2%;
+}
+figure img{
+  width: 35%;
 }
 footer{
   background-color: rgb(23, 23, 252);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.reseau, .copyright, .mentions-legales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reseau a{
+  font-size: 2.2rem;
+  margin: 2%;
+  color: #fff;                        /* Couleur des liens */
 }
 
 /* balise pour modifier les incons du footer */
-.fa-brands, .fa-solid{ 
+/*.fa-brands, .fa-solid{ 
   color:white; /* Icons de la bibliothèque Font Awesome (Facebook)*/
-}
+/*}
 
 
 
