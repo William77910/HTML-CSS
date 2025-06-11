@@ -131,3 +131,35 @@
 .test{                                  /*teste de changement de couleur de la navbar avec des couleurs personalisées*/
   background-color: var(--bs-yellow);
 }
+#slider{
+  position: relative;
+}
+.image_text{
+  position: absolute;
+  z-index: 1;
+  top: 137px;
+  left: 147px;
+}
+.image_text span{
+  color: #70abcf;
+}
+.line{
+  position: relative;
+  width: 200px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, .5);
+  left: 42%;
+  top: 9%;
+}
+.circle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #70abcf;
+  border-radius: 50%;
+  right: 50%;
+}
+.fa-circle{
+  border: 5px solid #fff;
+}
