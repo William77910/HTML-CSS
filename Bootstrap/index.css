@@ -121,9 +121,15 @@
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
 }
+body{
+  background-color: #cacaca;
+}
+h1{
+  color: #fff;
+}
 
 #services p{
-  max-width: 60%;
+  max-width: 80%;
 }
 .nav-link:hover{
   color: brown;
@@ -162,4 +168,14 @@
 }
 .fa-circle{
   border: 5px solid #fff;
+}
+.icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #70abcf;
+}
+.icon i{
+  position: absolute;
+  color: #70abcf;
 }
